@@ -7,7 +7,7 @@ class handler:
 
     def dados_arquivos(self):
         arquivos = os.listdir(self.dir_)
-        print(arquivos)
+
         for i in range(len(arquivos)):
             nome = self.dir_+"/"+arquivos[i]
             txt = open(nome,'r')
@@ -18,7 +18,6 @@ class handler:
 
             for i in range(len(lista_linhas)):
                 lista_linhas[i] = float(lista_linhas[i].replace(",","."))
-            
                 self.dados.append(lista_linhas)
 
             txt.close()
