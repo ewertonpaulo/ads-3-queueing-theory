@@ -1,4 +1,4 @@
-from script_shell import script
+from shell.script_shell import script
 
 if __name__ == '__main__':
     scr = script(1000)
