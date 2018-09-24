@@ -1,0 +1,10 @@
+.settings
+.vscode
+bin
+env
+lib
+saida_chegada
+src
+.classpath
+.project
+__pycache__
