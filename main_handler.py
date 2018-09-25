@@ -12,4 +12,4 @@ def questao2(dados):
     theory = queueing(dados)
     theory.tempo_medio()
 
-questao2(dados, list_x, list_y)
+questao2(dados)
