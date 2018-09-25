@@ -7,18 +7,18 @@ class handler:
 
     def dados_arquivos(self):
         arquivos = os.listdir(self.dir_)
-
+        
         for i in range(len(arquivos)):
             nome = self.dir_+"/"+arquivos[i]
             txt = open(nome,'r')
-
+            print(nome)
             linha = txt.readlines()
             linha[1] = linha[1].replace("\n,","")
             lista_linhas = linha[1].split()
 
-            for i in range(len(lista_linhas)):
-                lista_linhas[i] = float(lista_linhas[i].replace(",","."))
+            for h in range(len(lista_linhas)):
+                lista_linhas[h] = float(lista_linhas[h].replace(",","."))
                 self.dados.append(lista_linhas)
 
-            txt.close()
-            return self.dados
+        txt.close()
+        return self.dados.sort()
