@@ -7,11 +7,10 @@ class handler:
 
     def dados_arquivos(self):
         arquivos = os.listdir(self.dir_)
-        
+        print('reading the data')
         for i in range(len(arquivos)):
             nome = self.dir_+"/"+arquivos[i]
             txt = open(nome,'r')
-            print(nome)
             linha = txt.readlines()
             linha[1] = linha[1].replace("\n,","")
             lista_linhas = linha[1].split()
