@@ -34,7 +34,7 @@ def questao4b():
     hand = handler(dados, dir_)
     hand.dados_arquivos()
     theory = queueing(dados)
-    print("A porcentagem do servidor ficou em %.2f percent no cenário da questão 3 com 12 requisições fixas e um numero de servidores variavél." %theory.percent())
+    print("A porcentagem do servidor ficou em %.2f percent no cenário com 3 servidores número de requisições variavél." %theory.percent())
 
 questao2()
 questao3()
