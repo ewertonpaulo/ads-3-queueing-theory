@@ -39,5 +39,5 @@ def questao4b():
 
 # questao2()
 # questao3()
-# questao4a()
+questao4a()
 questao4b()

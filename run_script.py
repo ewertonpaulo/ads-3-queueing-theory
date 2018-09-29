@@ -25,9 +25,9 @@ def recursive_question4(count):
         count = count + 10
         return recursive_question4(count)
 
-# print('coletando dados com numero de servidores variando')
-# recursive_question2(count)
-# print('coletando dados com taxa de chegada variando')
-# recursive_question3(count)
+print('coletando dados com numero de servidores variando')
+recursive_question2(count)
+print('coletando dados com taxa de chegada variando')
+recursive_question3(count)
 print('coletando dados com taxa de chegada variando e numero de servidores igual a 3')
 recursive_question4(count)
