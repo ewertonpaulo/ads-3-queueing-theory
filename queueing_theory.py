@@ -41,3 +41,26 @@ class queueing:
             data[1].append(tp_medio_resp)
 
         grafico.plot(self, data[0], data[1],'numero de servidores x por tempo médio resposta y')
+
+    def tmp_md_resp_percent(self):
+        data = [[],[]]
+        data2 = [[],[]]
+        for dado in self.dados:
+            tx_chegada = dado[0]
+            tp_medio_resp = dado[5]
+            if tp_medio_resp <= 0.5:
+                data[0].append(tx_chegada)
+                data[1].append(tp_medio_resp)
+            data2[0].append(tx_chegada)
+            data2[1].append(tp_medio_resp)
+        
+        grafico.plot(self, data[0], data[1],'max de requisições é de '+str(data[0][-1]) +' x por tempo médio resposta y')
+        grafico.plot(self, data2[0], data2[1],'max de requisições x por tempo médio resposta y')
+
+    def percent(self):
+        for dado in self.dados:
+            num_serv = dado[2]
+            tp_medio_resp = dado[5]
+
+            if tp_medio_resp <= 0.5:
+                return num_serv/12*100
