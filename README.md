@@ -51,12 +51,13 @@ Letra b:
 Trecho de código para realizar calculo:
 ```py
 def percent(self):
-        for dado in self.dados:
-            num_serv = dado[2]
-            tp_medio_resp = dado[5]
+        for i in range(len(self.dados)):
+            tx_chegada = self.dados[i][0]
+            tp_medio_resp = self.dados[i][5]
 
-            if tp_medio_resp <= 0.5:
-                return num_serv/12*100
+            if tp_medio_resp > 0.5:
+                tx_chegada = self.dados[i-1][0]
+                return (tx_chegada/12)*100
 ```
 
 

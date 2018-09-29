@@ -14,10 +14,10 @@ class handler:
             linha = txt.readlines()
             linha[1] = linha[1].replace("\n,","")
             lista_linhas = linha[1].split()
-
             for h in range(len(lista_linhas)):
                 lista_linhas[h] = float(lista_linhas[h].replace(",","."))
-                self.dados.append(lista_linhas)
+            self.dados.append(lista_linhas)
 
         txt.close()
         return self.dados.sort()
+    

@@ -30,14 +30,13 @@ def questao4a():
 
 def questao4b():
     dados = []
-    dir_ = 'n_servidor'
+    dir_ = 'saida_chegada_serv'
     hand = handler(dados, dir_)
     hand.dados_arquivos()
-
     theory = queueing(dados)
     print("A porcentagem do servidor ficou em %.2f percent no cenário da questão 3 com 12 requisições fixas e um numero de servidores variavél." %theory.percent())
 
-# questao2()
-# questao3()
+questao2()
+questao3()
 questao4a()
 questao4b()
