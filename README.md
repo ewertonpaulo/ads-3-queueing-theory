@@ -38,6 +38,7 @@ Como observado na imagem, a quantidade minima para se obter um tempo médio de r
 
 ### Questão 4:
 Letra a:
+
 ![Image of Yaktocat](https://github.com/ewertonpaulo/ads-3-queueing-theory/blob/master/graficos/questao4.2.png)
 
 Aqui podemos observar por completo oque foi coletado de testes e o resultado.
@@ -45,6 +46,7 @@ Aqui podemos observar por completo oque foi coletado de testes e o resultado.
 
 Como se pode observar apenas nos cados com um número de 1 a 6 requisições que o tempo de resposta fica menor que 0.5.
 Letra b:
+
 ![Image of Yaktocat](https://github.com/ewertonpaulo/ads-3-queueing-theory/blob/master/graficos/2018-09-29%20(1).png)
 Trecho de código para realizar calculo:
 ```py
