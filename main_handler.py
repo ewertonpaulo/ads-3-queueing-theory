@@ -2,14 +2,22 @@ from txt_handler import handler
 import matplotlib.pyplot as plt
 from queueing_theory import queueing
 
-dir_ = 'saida_chegada'
 dados = []
 
-hand = handler(dados, dir_)
-hand.dados_arquivos()
-
 def questao2(dados):
+    dir_ = 'saida_chegada'
+    hand = handler(dados, dir_)
+    hand.dados_arquivos()
+
     theory = queueing(dados)
     theory.tempo_medio()
 
-questao2(dados)
+def questao3(dados):
+    dir_ = 'n_servidor'
+    hand = handler(dados, dir_)
+    hand.dados_arquivos()
+
+    theory = queueing(dados)
+    theory.tmp_md_resp()
+
+questao3(dados)
